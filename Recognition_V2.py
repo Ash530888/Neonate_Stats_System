@@ -38,7 +38,6 @@ def with_content(file, part, area):
     _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_OTSU | cv2.THRESH_BINARY_INV)
     top = str(thresh.tolist()).count("255")
     print(top)
-    input()
     time_ = False
     word_ = False
     count = 0
@@ -61,6 +60,7 @@ def with_content(file, part, area):
     # cv2.imshow("pic1",img)
     # cv2.waitKey(0)
     print(result)
+    input("continue?")
     return count,result
 
 def output_file(filename):
