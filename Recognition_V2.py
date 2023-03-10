@@ -38,6 +38,7 @@ def with_content(file, part, area):
     _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_OTSU | cv2.THRESH_BINARY_INV)
     top = str(thresh.tolist()).count("255")
     print(top)
+    input()
     time_ = False
     word_ = False
     count = 0
